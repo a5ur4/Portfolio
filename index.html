@@ -8,6 +8,7 @@
     <title>Portifólio</title>
     <link rel="shortcut icon" href="https://cdn.onlinewebfonts.com/svg/img_110324.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -405,7 +406,7 @@
                 <form>
                     <nav>
                         <div class="form__group field">
-                            <input required="" placeholder="Name" class="form__field" type="name">
+                            <input required="" placeholder="Name" class="form__field" type="name" id="nome">
                             <label class="form__label" for="name">Nome </label>
                         </div>
                         <div class="form__group field">
@@ -422,7 +423,7 @@
                     </nav>
                     <br>
                     <br>
-                    <button>Enviar sua mensagem</button>
+                    <button onclick="alert_login()" type="submit" value="Enviar">Enviar sua mensagem</button>
                 </form>
             </nav>
             <br>
@@ -434,23 +435,6 @@
             </footer>
         </section>
     </main>
-    <script>
-        function scroll_home() {
-            window.scrollTo(0, 400);
-        }
-        function scroll_projects() {
-            window.scrollTo(0, 1750)
-        }
-        function scroll_services() {
-            window.scrollTo(0, 2300)
-        }
-        function scroll_titles() {
-            window.scrollTo(0, 2950)
-        }
-        function scroll_contact() {
-            window.scrollTo(0, 3700)
-        }
-    </script>
 </body>
 
 </html>
