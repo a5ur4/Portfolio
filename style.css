@@ -73,6 +73,17 @@ article #linha_middle {
     width: 400px;
 }
 
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: #1b1b1b;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    height: 25%;
+    background-color: #dd9900;
+}
+
 header {
     width: 100%;
     display: flex;
@@ -94,18 +105,32 @@ header div {
     margin-left: 40em;
 }
 
-header div li {
+header div ul li {
     display: inline-flex;
     margin-left: 20px;
     margin-right: 20px;
     cursor: pointer;
     font-size: medium;
+    transition: 0.5s ease-in-out;
 }
 
-header div li:hover {
+header div ul li:hover {
     color: #dd9900;
-    text-decoration: overline;
-    transition: 0.5s;
+}
+
+header div ul li::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #dd9900;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+header div li:hover::after {
+    width: 100%;
 }
 
 main {
@@ -179,7 +204,6 @@ article {
 #section_1 div img {
     margin-top: 60px;
     margin-left: 65px;
-
     height: 300px;
     width: 300px;
     border-radius: 50%;
@@ -201,6 +225,7 @@ article {
     font-weight: 700;
     background-color: #dd9900;
     border: none;
+    transition: 0.5s ease-in-out;
 }
 
 #section_1 button a {
@@ -209,20 +234,19 @@ article {
     color: #1B1B1B;
     height: 50px;
     width: 170px;
+    transition: 0.5s ease-in-out;
 }
 
 #section_1 button:hover {
     background-color: #1B1B1B;
     border: #dd9900 1px solid;
     width: 200px;
-    transition: 0.5s;
     box-shadow: 0px 0px 40px 15px rgba(221, 153, 0, 0.87);
 }
 
 #section_1 button a:hover {
     color: #dd9900;
     text-decoration: underline;
-    transition: 0.5s;
 }
 
 #section_2 {
@@ -265,7 +289,8 @@ article {
     text-align: center;
     align-items: center;
     border-radius: 10px;
-    box-shadow: 2px 2px 41px 20px #1b1b1b;
+    box-shadow: 2px 2px 35px 15px #1b1b1b;
+    transition: 0.5s ease-in-out;
 }
 
 .card img {
@@ -275,17 +300,18 @@ article {
 
 .card h5 {
     opacity: 0;
+    transition: 0.3s ease-in-out;
+    padding: 20px;
+    margin-top: -5px;
 }
 
 .card h5:hover {
     opacity: 1;
-    transition: 0.5s;
 }
 
 .card:hover {
     height: 450px;
     width: 450px;
-    transition: 0.5s;
     box-shadow: 0px 0px 40px 15px rgba(221, 153, 0, 0.87);
 }
 
@@ -394,24 +420,24 @@ article {
     border-radius: 15px;
     align-items: center;
     text-align: center;
+    transition: 0.5s ease-in-out;
 }
 
 .projects nav a {
     text-decoration: none;
     color: #dd9900;
+    transition: 0.5s ease-in-out;
 }
 
 .projects nav:hover {
     width: 160px;
     background-color: #dd9900;
-    transition: 0.5s;
     border: #1B1B1B 2px solid;
 }
 
 .projects nav a:hover {
     color: #1B1B1B;
     font-weight: bold;
-    transition: 0.5s;
 }
 
 #section_4 {
@@ -454,11 +480,11 @@ article {
     border-radius: 5px;
     border: #dd9900 2px solid;
     line-height: 15px;
+    transition: 0.5s ease-in-out;
 }
 
 .container:hover {
     padding: 30px;
-    transition: 0.5s;
     box-shadow: 0px 0px 40px 15px rgba(221, 153, 0, 0.87);
 }
 
@@ -479,6 +505,13 @@ article {
 
 #section_5 {
     display: flex;
+}
+
+#section_5 nav {
+    text-align: center;
+    align-items: center;
+    color: #000000;
+    margin: 0 auto;
 }
 
 #titles {
@@ -534,11 +567,11 @@ article {
     border-radius: 10px;
     box-shadow: 0px 0px 56px 14px rgba(27, 27, 27, 0.87);
     cursor: pointer;
+    transition: 0.5s ease-in-out;
 }
 
 #video iframe:hover {
     box-shadow: 0px 0px 40px 15px rgba(221, 153, 0, 0.87);
-    transition: 0.5s;
 }
 
 #section_6 {
@@ -648,12 +681,12 @@ article {
     text-decoration: none;
     color: #000000;
     font-size: small;
+    transition: 0.5s ease-in-out;
 }
 
 .contact h3 a:hover {
     text-decoration: underline;
     text-shadow: 1px 1px 15px #ffb300;
-    transition: 0.5s;
 }
 
 .form__group {
@@ -673,7 +706,7 @@ article {
     color: #fff;
     padding: 7px 0;
     background: transparent;
-    transition: border-color 0.2s;
+    transition: border-color 0.2s ease-in-out;
 }
 
 .form__field::placeholder {
@@ -703,7 +736,7 @@ article {
     border-image: linear-gradient(to right, #dd9900, #dd9900);
     border-image-slice: 1;
     width: 300px;
-    transition: 0.5s;
+    transition: 0.5s ease-in-out;
 }
 
 .form__field:focus~.form__label {
@@ -728,11 +761,11 @@ article {
     border: #9b9b9b 1px solid;
     border-radius: 5px;
     color: white;
+    transition: 0.5s ease-in-out;
 }
 
 #section_6 form nav textarea:hover {
     border: #DD9900 1px solid;
-    transition: 0.5s;
 }
 
 #section_6 form button {
@@ -746,13 +779,13 @@ article {
     color: #9b9b9b;
     background-color: #1B1B1B;
     cursor: pointer;
+    transition: 0.5s ease-in-out;
 }
 
 #section_6 form button:hover {
     color: #dd9900;
     border: #dd9900 1px solid;
     width: 200px;
-    transition: 0.5s;
     text-shadow: 1px 1px 15px #B77729;
 }
 
