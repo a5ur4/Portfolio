@@ -7,11 +7,11 @@ function scroll_projects() {
 }
 
 function scroll_services() {
-    window.scrollTo(0, 2300)
+    window.scrollTo(0, 2350)
 }
 
 function scroll_titles() {
-    window.scrollTo(0, 2950)
+    window.scrollTo(0, 3000)
 }
 
 function scroll_contact() {
