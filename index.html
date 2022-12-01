@@ -20,6 +20,9 @@
                     <p onClick="scroll_home()">Home</p>
                 </li>
                 <li>
+                    <p onClick="scroll_courses()">Cursos</p>
+                </li>
+                <li>
                     <p onClick="scroll_projects()">Projetos</p>
                 </li>
                 <li>
@@ -68,10 +71,44 @@
                 <div>
                     <br>
                     <button>
-                        <a href="https://github.com/a5ur4" target="_blank">Confira meu trabalho</a>
+                        <a href="https://github.com/a5ur4" target="_blank" class="teste">Confira meu trabalho</a>
                     </button>
                 </div>
             </nav>
+        </section>
+        <section id="section_0_5">
+            <br>
+            <h1>Cursos</h1>
+            <hr class="linha">
+            <hr id="linha_middle">
+            <br>
+            <div id="courses">
+                <nav class="courses_card">
+                    <h3>ETE - Ministro Fernando Lyra</h3>
+                    <img src="R-removebg-preview.png" alt="" id="ETE">
+                    <h4 class="card_text">Desenvolvimento e analise de sistemas</h4>
+                    <button class="courses_card_i"><a href="" class="courses_card_a">Saiba mais</a></button>
+                </nav>
+                <hr>
+                <nav class="courses_card">
+                    <h3>CS50's Web programming with Python and JavaScript</h3>
+                    <img src="https://th.bing.com/th/id/R.f743cfb176d20fab9ec8e6eb46057884?rik=C6QcbgSm93D4hA&pid=ImgRaw&r=0"
+                        alt="">
+                    <h4 class="card_text">Desenvolvimento web com Python,<br> JavaScript e outras tecnologias</h4>
+                    <button class="courses_card_i"><a href="" class="courses_card_a">Saiba mais</a></button>
+                </nav>
+                <hr>
+                <nav class="courses_card">
+                    <h3>CS50's Introduction to Computer Science</h3>
+                    <img src="https://th.bing.com/th/id/R.f743cfb176d20fab9ec8e6eb46057884?rik=C6QcbgSm93D4hA&pid=ImgRaw&r=0"
+                        alt="">
+                    <h4 class="card_text">Introdução a ciência da computação</h4>
+                    <button class="courses_card_i"><a href="" class="courses_card_a">Saiba mais</a></button>
+                </nav>
+            </div>
+            <br>
+            <hr id="linha_middle">
+            <hr class="linha">
         </section>
         <br>
         <section id="section_2">
@@ -87,7 +124,8 @@
                     <br>
                     <h1>HTML 5</h1>
                     <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="">
-                    <h5>HTML (abreviação para a expressão inglesa HyperText Markup Language, que significa: "Linguagem
+                    <h5 class="card_text">HTML (abreviação para a expressão inglesa HyperText Markup Language, que
+                        significa: "Linguagem
                         de Marcação de Hipertexto") é uma linguagem de marcação utilizada na construção de páginas na
                         Web.</h5>
                 </nav>
@@ -95,14 +133,16 @@
                     <br>
                     <h1>CSS</h1>
                     <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="">
-                    <h5>Cascading Style Sheets (CSS) é um mecanismo para adicionar estilo (cores, fontes, espaçamento,
+                    <h5 class="card_text">Cascading Style Sheets (CSS) é um mecanismo para adicionar estilo (cores,
+                        fontes, espaçamento,
                         etc.) a um documento web.</h5>
                 </nav>
                 <nav class="card">
                     <br>
                     <h1>JS</h1>
                     <img src="https://pcodinomebzero.neocities.org/Imagens/javascript1.png" alt="">
-                    <h5>JavaScript (frequentemente abreviado como JS) é uma linguagem de programação interpretada
+                    <h5 class="card_text">JavaScript (frequentemente abreviado como JS) é uma linguagem de programação
+                        interpretada
                         estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma (protótipos,
                         orientado a objeto, imperativo e funcional).</h5>
                 </nav>
@@ -111,7 +151,8 @@
                     <h1>PHP</h1>
                     <img src="https://assets-global.website-files.com/5e665d441fbc681e68fe21f6/62ec2850d64065681793077a_6238a90433df75bbdda48fe3_6233833284ad64063c019f06_tech-php.png"
                         alt="">
-                    <h5>PHP é uma linguagem interpretada livre, usada originalmente apenas para o desenvolvimento de
+                    <h5 class="card_text">PHP é uma linguagem interpretada livre, usada originalmente apenas para o
+                        desenvolvimento de
                         aplicações presentes e atuantes no lado do servidor, capazes de gerar conteúdo dinâmico na World
                         Wide Web.</h5>
                 </nav>
@@ -123,7 +164,8 @@
                     <h1>PYTHON</h1>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png"
                         alt="">
-                    <h5>Python é uma linguagem de programação de alto nível, interpretada de script, imperativa,
+                    <h5 class="card_text">Python é uma linguagem de programação de alto nível, interpretada de script,
+                        imperativa,
                         orientada a objetos, funcional, de tipagem dinâmica e forte.</h5>
                 </nav>
                 <nav class="card">
@@ -131,21 +173,24 @@
                     <h1>MY SQL</h1>
                     <img src="https://www.freepnglogos.com/uploads/logo-mysql-png/logo-mysql-cdb-for-mysql-7.png"
                         alt="">
-                    <h5>O MySQL é um sistema de gerenciamento de banco de dados (SGBD), que utiliza a linguagem SQL
+                    <h5 class="card_text">O MySQL é um sistema de gerenciamento de banco de dados (SGBD), que utiliza a
+                        linguagem SQL
                         (Linguagem de Consulta Estruturada, do inglês Structured Query Language) como interface.</h5>
                 </nav>
                 <nav class="card">
                     <br>
                     <h1>C - Em estudo</h1>
                     <img src="https://www.britefish.net/wp-content/uploads/2019/07/logo-c-1.png" alt="">
-                    <h5>C (pronunciado como a letra "C") é umalinguagem de programação de computadoresde uso geral. Foi
-                        criado na década de 1970 porDennis Ritchie, e continua a ser muito utilizado e influente..</h5>
+                    <h5 class="card_text">C (pronunciado como a letra "C") é umalinguagem de programação de
+                        computadoresde uso geral. Foi
+                        criado na década de 1970 porDennis Ritchie, e continua a ser muito utilizado e influente.</h5>
                 </nav>
                 <nav class="card">
                     <br>
                     <h1>LINUX - Em estudo</h1>
                     <img src="https://www.brosix.com/wp-content/uploads/Linux_Logo_07.png" alt="">
-                    <h5>Linux é um termo popularmente empregado para se referir a sistemas operativos ou sistemas
+                    <h5 class="card_text">Linux é um termo popularmente empregado para se referir a sistemas operativos
+                        ou sistemas
                         operacionais que utilizam o Kernel Linux.</h5>
                 </nav>
             </div>
@@ -175,8 +220,8 @@
                     <nav>
                         <br>
                         <a href="https://github.com/a5ur4/2-TDS-B/blob/09c278d5401f4494fff82b8f9ad104c3aa34f62f/HTML%20-%20CSS/LPR/PROJETOS%20P%C3%9ABLICOS%20-%20ESTUDOS/Login_GOOGLE/login_google.html"
-                            target="_blank">Clique aqui <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-                                alt=""></a>
+                            target="_blank" class="button_projects">Clique aqui <img
+                                src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a>
                     </nav>
                 </div>
                 <div class="projects">
@@ -188,8 +233,8 @@
                     <nav>
                         <br>
                         <a href="https://github.com/a5ur4/2-TDS-B/blob/09c278d5401f4494fff82b8f9ad104c3aa34f62f/PYTHON/PROJETOS%20P%C3%9ABLICOS%20-%20ESTUDOS/BHASKARA/Calc_bask_delt.py"
-                            target="_blank">Clique aqui <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-                                alt=""></a>
+                            target="_blank" class="button_projects">Clique aqui <img
+                                src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a>
                     </nav>
                 </div>
                 <div class="projects">
@@ -201,8 +246,8 @@
                     <nav>
                         <br>
                         <a href="https://github.com/a5ur4/2-TDS-B/blob/09c278d5401f4494fff82b8f9ad104c3aa34f62f/PYTHON/PROJETOS%20P%C3%9ABLICOS%20-%20ESTUDOS/ARRANJO%20-%20COMBINA%C3%87%C3%83O/arranjo_combina%C3%A7%C3%A3o.py"
-                            target="_blank">Clique aqui <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-                                alt=""></a>
+                            target="_blank" class="button_projects">Clique aqui <img
+                                src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a>
                     </nav>
                 </div>
             </div>
@@ -218,8 +263,8 @@
                     <nav>
                         <br>
                         <a href="https://github.com/a5ur4/2-TDS-B/blob/09c278d5401f4494fff82b8f9ad104c3aa34f62f/PYTHON/PROJETOS%20P%C3%9ABLICOS%20-%20ESTUDOS/EXCEL/Gerador%20de%20planilhas%20escolar.py"
-                            target="_blank">Clique aqui <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-                                alt=""></a>
+                            target="_blank" class="button_projects">Clique aqui <img
+                                src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a>
                     </nav>
                 </div>
                 <div class="projects">
@@ -231,8 +276,8 @@
                     <nav>
                         <br>
                         <a href="https://github.com/a5ur4/2-TDS-B/blob/09c278d5401f4494fff82b8f9ad104c3aa34f62f/PYTHON/PROJETOS%20P%C3%9ABLICOS%20-%20ESTUDOS/PG%20-%20PA/Calc_PG-PA.py"
-                            target="_blank">Clique aqui <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-                                alt=""></a>
+                            target="_blank" class="button_projects">Clique aqui <img
+                                src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a>
                     </nav>
                 </div>
                 <div class="projects">
@@ -244,8 +289,8 @@
                     <nav>
                         <br>
                         <a href="https://github.com/a5ur4/2-TDS-B/blob/09c278d5401f4494fff82b8f9ad104c3aa34f62f/PYTHON/PROJETOS%20P%C3%9ABLICOS%20-%20ESTUDOS/MATRIZES/delt_Aij_Dij.py"
-                            target="_blank">Clique aqui <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-                                alt=""></a>
+                            target="_blank" class="button_projects">Clique aqui <img
+                                src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a>
                     </nav>
                 </div>
             </div>
