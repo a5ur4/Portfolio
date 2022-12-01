@@ -80,7 +80,7 @@ article #linha_middle {
 
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    height: 25%;
+    height: 20%;
     background-color: #dd9900;
 }
 
@@ -102,7 +102,7 @@ header h2 {
 }
 
 header div {
-    margin-left: 40em;
+    margin-left: 35em;
 }
 
 header div ul li {
@@ -194,6 +194,112 @@ article {
     text-align: center;
 }
 
+#section_0_5 {
+    height: 33em;
+    background-color: #282828;
+    text-align: center;
+    align-items: center;
+}
+
+#section_0_5 h1 {
+    color: #DD9900;
+}
+
+#section_0_5 .linha {
+    border: 1px solid #dd9900;
+}
+
+#section_0_5 #linha_middle {
+    border: 1px solid #dd9900;
+}
+
+#courses {
+    display: flex;
+    height: 20em;
+    width: 90%;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.courses_card {
+    height: 300px;
+    width: 450px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid #DD9900;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+    line-height: 16px;
+}
+
+.courses_card button {
+    border-radius: 10px;
+    height: 60px;
+    width: 200px;
+    background-color: #dd9900;
+    border: none;
+    opacity: 0;
+    cursor: default;
+    transition: 0.5s ease-in-out;
+}
+
+.courses_card button a {
+    text-decoration: none;
+    font-size: large;
+    color: #1B1B1B;
+    cursor: default;
+    font-weight: 600;
+}
+
+.courses_card:hover {
+    height: 360px;
+    width: 600px;
+}
+
+.courses_card:hover button.courses_card_i {
+    opacity: 1;
+}
+
+.courses_card button:hover {
+    background-color: #1B1B1B;
+    border: #DD9900 1px solid;
+    box-shadow: 0px 0px 40px 15px rgba(221, 153, 0, 0.87);
+    cursor: pointer;
+}
+
+.courses_card button:hover a.courses_card_a {
+    color: #dd9900;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.courses_card img {
+    height: 120px;
+    width: 120px;
+}
+
+.courses_card h3 {
+    color: #DD9900;
+    padding: 5px;
+}
+
+#courses hr {
+    border: 1px solid #DD9900;
+    height: 90%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#ETE {
+    height: 130px;
+    width: 200px;
+}
+
+.courses_card h4 {
+    color: #DD9900;
+}
+
 #section_1 {
     height: 25em;
     width: 100%;
@@ -244,8 +350,8 @@ article {
     box-shadow: 0px 0px 40px 15px rgba(221, 153, 0, 0.87);
 }
 
-#section_1 button a:hover {
-    color: #dd9900;
+#section_1 button:hover a.teste {
+    color: #DD9900;
     text-decoration: underline;
 }
 
@@ -305,14 +411,14 @@ article {
     margin-top: -5px;
 }
 
-.card h5:hover {
-    opacity: 1;
-}
-
 .card:hover {
     height: 450px;
     width: 450px;
     box-shadow: 0px 0px 40px 15px rgba(221, 153, 0, 0.87);
+}
+
+.card:hover h5.card_text {
+    opacity: 1;
 }
 
 #section_3 {
@@ -435,9 +541,10 @@ article {
     border: #1B1B1B 2px solid;
 }
 
-.projects nav a:hover {
+.projects nav:hover a.button_projects {
     color: #1B1B1B;
     font-weight: bold;
+    text-decoration: underline;
 }
 
 #section_4 {
