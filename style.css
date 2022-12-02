@@ -99,6 +99,7 @@ header h2 {
     margin-left: 35px;
     color: #dd9900;
     font-weight: bold;
+    cursor: pointer;
 }
 
 header div {
@@ -451,8 +452,8 @@ article {
     height: 170px;
     width: 360px;
     border-radius: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 45px;
+    margin-right: 45px;
     line-height: 5px;
     background: linear-gradient(316deg, #dd9900, #8f670b, #1b1b1b);
     background-size: 600% 600%;
