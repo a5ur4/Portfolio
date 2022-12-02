@@ -1,25 +1,51 @@
+function scroll_top() {
+    window.scrollTo({
+        top: 0,
+        behavior:"smooth",
+    })
+    
+}
+
 function scroll_home() {
-    window.scrollTo(0, 400)
+    window.scrollTo({ 
+        top: 400,
+        behavior:"smooth",
+    })
 }
 
 function scroll_courses() {
-    window.scrollTo(0, 700)
+    window.scroll({
+        top:700,
+        behavior:"smooth",
+    })
 }
 
 function scroll_projects() {
-    window.scrollTo(0, 2300)
+    window.scroll({
+        top:2300,
+        behavior:"smooth",
+})
 }
 
 function scroll_services() {
-    window.scrollTo(0, 2870)
+    window.scroll({
+        top:2870,
+        behavior:"smooth",
+    })
 }
 
 function scroll_titles() {
-    window.scrollTo(0, 3550)
+    window.scroll({
+        top:3550,
+        behavior:"smooth",
+    })
 }
 
 function scroll_contact() {
-    window.scrollTo(0, 4230)
+    window.scroll({
+        top:4230,
+        behavior:"smooth",
+    })
 }
 
 function alert_login() {
